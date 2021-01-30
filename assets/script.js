@@ -26,7 +26,6 @@ const pokemonIndividual = (pokemon) =>{
 }
 //Pokemones en pantalla
 const pokemonesEnLaPagina = (pokemon,div) =>{
-    console.log(pokemon)
         div += `<div class="card my-3 mx-3" style="width: 18rem;">`
         div += `<img src="${pokemon.sprites.other.dream_world.front_default}" class="card-img-top" alt="...">`
         div += `<h4 class="card-title">Id: ${pokemon.id}</h4>`
@@ -50,6 +49,5 @@ const paginacion = (info) =>{
 
     document.getElementById('paginacion').innerHTML = html;
 }
-
 //Llevo al URL de la API a la funcion
 api(url);
